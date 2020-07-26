@@ -7,7 +7,7 @@
     "enzyme-adapter-react-15": "^1.4.1",
     "enzyme-adapter-react-16": "^1.15.2",
     "jest-dom": "^4.0.0",
-    "jquery": "3.4.1",
+    "jquery": "3.5.1",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.13.1"
   },
