@@ -1,10 +1,10 @@
 # stepbar
 Step Bar using React and Webpack
-This library provides a form widget for use with your project. 
+This library provides a stepbar widget for use with your project. 
 
 Library can be installed by adding this line to package.json dependancies:
 ```js
-"form": "darincardin/stepbar",
+"stepbar": "darincardin/stepbar",
 ```
 
 
