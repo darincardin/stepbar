@@ -5,13 +5,27 @@ import './styles.scss';
 
 class StepBar extends React.Component{
 	
+	constructor(props){
+		super(props);
+
+		var segments = this.props.array.length * 2;	
+		this.segmentLength = 100 / segments;
+	}
+	
+	className = i => this.props.index==i ? "active" : "";
+	
     render() {
+	
+		var width  = (1 + this.props.index*2) * this.segmentLength;
+		var width_li = this.segmentLength*2;
+
 		return (
-			<div className="step-bar" > 
+			<div ref={this.ref} className="step-bar" > 
+				<div className="step-highlight" style={{'width': width + '%'}} ></div>
 				<ul>
 				{
 					this.props.array.map((v,i)=>(
-						<li key={i} className={this.props.index==i?'active':''}>{v.label}</li>
+						<li  key={i} style={{'width': width_li + '%'}} className={ this.className(i) }>{v.label}</li>
 					))
 				}
 			    </ul>
@@ -27,6 +41,4 @@ StepBar.propTypes = {
 };
 
 export default StepBar;
-
-
 

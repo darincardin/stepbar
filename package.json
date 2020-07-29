@@ -31,7 +31,7 @@
       ]
     ]
   },
-  "description": "Form using ReactJS and Webpack",
+  "description": "Stepbar using ReactJS and Webpack",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
@@ -57,7 +57,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.1.1"
   },
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
   "name": "form",
   "scripts": {
