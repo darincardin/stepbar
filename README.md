@@ -1,5 +1,5 @@
 # stepbar
-Step Bar using React and Webpack
+Step Bar using React and Webpack.
 This library provides a stepbar widget for use with your project. 
 
 Library can be installed by adding this line to package.json dependancies:
