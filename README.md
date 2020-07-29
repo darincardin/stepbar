@@ -1,39 +1,22 @@
-# form
-Simple form using React and Webpack
+# stepbar
+Step Bar using React and Webpack
 This library provides a form widget for use with your project. 
 
 Library can be installed by adding this line to package.json dependancies:
 ```js
-"form": "darincardin/form#1.1.5",
+"form": "darincardin/stepbar",
 ```
 
 
 
-Widget currently has three input types:
- * Text
- * Phone
- * Number
- 
-The widget can then be included in the project like this:
 
 
 ```jsx
 import Form from 'form'; 
 
-var state = { object: {} }	
+state = { step: 0}
 	
-var inputs = [ 
-	{label:"First Name", name:"fName",  tag:"text", required:true},
-	{label:"Last Name",  name:"lName",  tag:"text"},
-	{label:"Phone",      name:"phone",  tag:"phone"},
-	{label:"Amount",     name:"amount", tag:"number"},
-]	
+array = [	{label:"A"}, {label:"B"}, {label:"C"},	{label:"D"}]
 
-var onSuccess = (result)=>{
-	console.log(result);
-}
-
-<Form  onSuccess={this.onSuccess} object={this.state.order}   fields={this.inputs}>
-  <button type="submit" className="btn btn-primary">Submit</button> 
-</Form>
+<StepBar index={this.state.step} array={this.array}  />
 ```
